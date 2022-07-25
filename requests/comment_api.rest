@@ -1,0 +1,28 @@
+GET http://localhost:3000/store/products
+
+###
+
+DELETE  http://localhost:3000/store/products/62de83a921aac70600eccfed
+
+###
+
+POST http://localhost:3000/store/products
+content-type: application/json
+
+{
+    "name": "Lee Cooper",
+    "description": "Formal shoes",
+    "price": 3000,
+    "category": "Shoes"
+}
+
+###
+
+PUT http://localhost:3000/store/products/62de83a921aac70600eccfed
+content-type: application/json
+
+{
+    "name": "Avenger",
+    "uuid": "345gdffdgdf"
+}
+
